@@ -1,0 +1,15 @@
+#! Python 3.8
+
+def sumaDeTiempo(a,b):
+
+    horasT = a+b
+
+    Hora = round(horasT/60)
+
+    Minutos = horasT%60
+
+    if Minutos < 10:
+
+        return (f"{Hora}:0{Minutos}")
+
+    return(f"{Hora}:{Minutos}")
